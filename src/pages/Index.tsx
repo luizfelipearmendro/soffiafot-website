@@ -126,7 +126,7 @@ const Index = () => (
     </section>
 
     {/* CTA */}
-    <section className="py-24 md:py-32">
+    {/* <section className="py-24 md:py-32">
       <div className="container mx-auto px-6 text-center max-w-2xl">
         <FadeIn>
           <h2 className="font-display text-3xl md:text-5xl font-light text-foreground mb-6">
@@ -142,7 +142,7 @@ const Index = () => (
           </a>
         </FadeIn>
       </div>
-    </section>
+    </section> */}
   </Layout>
 );
 

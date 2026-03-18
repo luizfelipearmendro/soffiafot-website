@@ -27,9 +27,9 @@ const Header = () => {
       <div className="container mx-auto px-6 flex items-center justify-between h-16 md:h-20">
         <Link to="/" className="flex items-center gap-2">
           <img
-            src="https://soffiafotografias.netlify.app/imagensSoff/logoooooo.png"
+            src="src\assets\logoooooo.png"
             alt="Soffia Fotografias"
-            className="h-9 w-auto brightness-0 invert"
+            className="h-9 w-auto"
           />
         </Link>
 
