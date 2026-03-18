@@ -11,9 +11,9 @@ const services = [
 ];
 
 const galleryPreview = [
-  "https://soffiafotografias.netlify.app/imagensSoff/IMG_3548%202.jpg",
-  "https://soffiafotografias.netlify.app/imagensSoff/IMG_4106.jpg",
-  "https://soffiafotografias.netlify.app/imagensSoff/IMG_3592copy.jpg",
+  "/images/IMG_3548%202.jpg",
+  "/images/IMG_4106.jpg",
+  "/images/IMG_3592copy.jpg",
 ];
 
 const Index = () => (
@@ -27,7 +27,7 @@ const Index = () => (
           <FadeIn>
             <div className="aspect-[3/4] overflow-hidden">
               <img
-                src="https://soffiafotografias.netlify.app/imagensSoff/soff-com-camera.jpg"
+                src="/images/soff-com-camera.jpg"
                 alt="Jullyany Soffia"
                 className="w-full h-full object-cover"
               />

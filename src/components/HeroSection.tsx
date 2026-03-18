@@ -5,7 +5,7 @@ const HeroSection = () => (
     {/* Background image */}
     <div className="absolute inset-0">
       <img
-        src="https://soffiafotografias.netlify.app/imagensSoff/IMG_5234%202.jpg"
+        src="/images/IMG_5234%202.jpg"
         alt="Soffia Fotografias"
         className="w-full h-full object-cover"
       />

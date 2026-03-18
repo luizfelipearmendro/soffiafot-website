@@ -9,21 +9,21 @@ const servicesData = [
     title: "Fotografia Profissional",
     description: "Ensaios fotográficos com olhar artístico e sensível, capturando a essência de cada momento.",
     features: ["Ensaios individuais e em grupo", "Cobertura de eventos", "Fotografia corporativa", "Book profissional"],
-    image: "https://soffiafotografias.netlify.app/imagensSoff/IMG_3548%202.jpg",
+    image: "/images/IMG_3548%202.jpg",
   },
   {
     icon: Film,
     title: "Videomaker",
     description: "Produções audiovisuais que contam histórias através do movimento, cor e emoção.",
     features: ["Vídeos institucionais", "Cobertura de eventos", "Conteúdo para redes", "Edição profissional"],
-    image: "https://soffiafotografias.netlify.app/imagensSoff/IMG_4106.jpg",
+    image: "/images/IMG_4106.jpg",
   },
   {
     icon: Smartphone,
     title: "Fotógrafo Mobile",
     description: "Conteúdo profissional otimizado para redes sociais e plataformas digitais.",
     features: ["Stories e Reels", "Fotos para Instagram", "Conteúdo para TikTok", "Edição para mobile"],
-    image: "https://soffiafotografias.netlify.app/imagensSoff/IMG_3592copy.jpg",
+    image: "/images/IMG_3592copy.jpg",
   },
 ];
 
@@ -66,7 +66,7 @@ const ServicosPage = () => (
             Interessado em algum <span className="italic">serviço?</span>
           </h2>
           <a
-            href="https://wa.me/5565984321637?text=Olá,%20Soffia!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços."
+            href="https://wa.me/5565981135918?text=Olá,%20Soffia!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block font-body text-sm tracking-wider uppercase px-10 py-4 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors duration-300"

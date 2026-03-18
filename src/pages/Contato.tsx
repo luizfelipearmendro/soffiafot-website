@@ -25,7 +25,7 @@ const ContatoPage = () => {
 
     const msg = `Olá, Soffia! Me chamo *${formData.nome}*.\n\n*Mensagem:* ${formData.mensagem}\n\n*E-mail:* ${formData.email}`;
 
-    const url = `https://wa.me/5565984321637?text=${encodeURIComponent(msg)}`;
+    const url = `https://wa.me/5565981135918?text=${encodeURIComponent(msg)}`;
 
     window.open(url, "_blank");
   };
@@ -46,7 +46,7 @@ const ContatoPage = () => {
 
               <div className="space-y-6 mb-10">
                 {[
-                  { icon: Phone, label: "(65) 98432-1637", href: "tel:+5565984321637" },
+                  { icon: Phone, label: "(65) 98113-5918", href: "tel:+5565981135918" },
                   { icon: Mail, label: "contato@soffiafotografias.com", href: "mailto:contato@soffiafotografias.com" },
                   { icon: MapPin, label: "Cuiabá - MT, Brasil", href: "#" },
                 ].map((item) => (
@@ -60,7 +60,7 @@ const ContatoPage = () => {
               </div>
 
               <a
-                href="https://wa.me/5565984321637"
+                href="https://wa.me/5565981135918"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 font-body text-sm tracking-wider uppercase px-8 py-3.5 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors duration-300"

@@ -6,12 +6,12 @@ import { useState } from "react";
 const categories = ["Todos", "Retratos", "Eventos", "Ensaios"];
 
 const photos = [
-  { src: "https://soffiafotografias.netlify.app/imagensSoff/IMG_3548%202.jpg", cat: "Retratos" },
-  { src: "https://soffiafotografias.netlify.app/imagensSoff/IMG_4106.jpg", cat: "Ensaios" },
-  { src: "https://soffiafotografias.netlify.app/imagensSoff/IMG_3592copy.jpg", cat: "Retratos" },
-  { src: "https://soffiafotografias.netlify.app/imagensSoff/IMG_6886%20-%2027.07.jpg", cat: "Eventos" },
-  { src: "https://soffiafotografias.netlify.app/imagensSoff/IMG_3560.jpg", cat: "Ensaios" },
-  { src: "https://soffiafotografias.netlify.app/imagensSoff/IMG_5234%202.jpg", cat: "Retratos" },
+  { src: "/images/IMG_3548%202.jpg", cat: "Retratos" },
+  { src: "/images/IMG_4106.jpg", cat: "Ensaios" },
+  { src: "/images/IMG_3592copy.jpg", cat: "Retratos" },
+  { src: "/images/IMG_6886%20-%2027.07.jpg", cat: "Eventos" },
+  { src: "/images/IMG_3560.jpg", cat: "Ensaios" },
+  { src: "/images/IMG_5234%202.jpg", cat: "Retratos" },
 ];
 
 const PortfolioPage = () => {

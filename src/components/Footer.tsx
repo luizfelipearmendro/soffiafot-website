@@ -23,7 +23,7 @@ const Footer = () => {
             Pronta para eternizar seus melhores momentos? Entre em contato e vamos criar algo inesquecível juntos.
           </p>
           <a
-            href="https://wa.me/5565984321637?text=Olá,%20Soffia!%20Gostaria%20de%20saber%20mais%20sobre%20seu%20trabalho."
+            href="https://wa.me/5565981135918?text=Olá,%20Soffia!%20Gostaria%20de%20saber%20mais%20sobre%20seu%20trabalho."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block font-body text-sm tracking-wider uppercase px-10 py-4 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors duration-300"
@@ -45,7 +45,7 @@ const Footer = () => {
             <a href="mailto:contato@soffiafotografias.com" className="text-muted-foreground hover:text-foreground transition-colors">
               <Mail className="w-5 h-5" />
             </a>
-            <a href="tel:+5565984321637" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="tel:+5565981135918" className="text-muted-foreground hover:text-foreground transition-colors">
               <Phone className="w-5 h-5" />
             </a>
           </div>

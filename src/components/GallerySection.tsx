@@ -2,12 +2,12 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const images = [
-  "https://soffiafotografias.netlify.app/imagensSoff/IMG_3548%202.jpg",
-  "https://soffiafotografias.netlify.app/imagensSoff/IMG_4106.jpg",
-  "https://soffiafotografias.netlify.app/imagensSoff/IMG_3592copy.jpg",
-  "https://soffiafotografias.netlify.app/imagensSoff/IMG_6886%20-%2027.07.jpg",
-  "https://soffiafotografias.netlify.app/imagensSoff/IMG_3560.jpg",
-  "https://soffiafotografias.netlify.app/imagensSoff/IMG_5234%202.jpg",
+  "/images/IMG_3548%202.jpg",
+  "/images/IMG_4106.jpg",
+  "/images/IMG_3592copy.jpg",
+  "/images/IMG_6886%20-%2027.07.jpg",
+  "/images/IMG_3560.jpg",
+  "/images/IMG_5234%202.jpg",
 ];
 
 const GallerySection = () => {

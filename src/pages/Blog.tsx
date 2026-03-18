@@ -8,19 +8,19 @@ const posts = [
   {
     title: "A Arte do Retrato Natural",
     excerpt: "Descubra como capturamos a essência de cada pessoa sem poses forçadas.",
-    image: "https://soffiafotografias.netlify.app/imagensSoff/IMG_3548%202.jpg",
+    image: "/images/IMG_3548%202.jpg",
     date: "15 Mar 2026",
   },
   {
     title: "Dicas para Ensaios ao Ar Livre",
     excerpt: "Os melhores horários, locações e como se preparar para um ensaio inesquecível.",
-    image: "https://soffiafotografias.netlify.app/imagensSoff/IMG_6886%20-%2027.07.jpg",
+    image: "/images/IMG_6886%20-%2027.07.jpg",
     date: "08 Mar 2026",
   },
   {
     title: "Por Trás das Câmeras",
     excerpt: "Um olhar sobre o processo criativo e os bastidores da Soffia Fotografias.",
-    image: "https://soffiafotografias.netlify.app/imagensSoff/IMG_3560.jpg",
+    image: "/images/IMG_3560.jpg",
     date: "01 Mar 2026",
   },
 ];
