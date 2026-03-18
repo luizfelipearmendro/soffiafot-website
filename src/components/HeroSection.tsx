@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => (
   <section id="hero" className="relative min-h-screen flex items-end pb-20 md:pb-32 overflow-hidden">
@@ -45,21 +46,22 @@ const HeroSection = () => (
         transition={{ delay: 0.9, duration: 0.8 }}
         className="mt-10 flex gap-4"
       >
-        <a
-          href="#galeria"
+        <Link
+          to="/galeria"
           className="font-body text-sm tracking-wider uppercase px-8 py-3.5 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors duration-300"
         >
           Ver Portfólio
-        </a>
-        <a
-          href="/sobre"
+        </Link>
+
+        <Link
+          to="/sobre"
           className="font-body text-sm tracking-wider uppercase px-8 py-3.5 border border-foreground/20 text-foreground hover:border-foreground/50 transition-colors duration-300"
         >
           Saiba Mais
-        </a>
+        </Link>
       </motion.div>
     </div>
-  </section>
+  </section >
 );
 
 export default HeroSection;
