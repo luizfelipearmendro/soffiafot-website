@@ -47,7 +47,7 @@ const HeroSection = () => (
         className="mt-10 flex gap-4"
       >
         <Link
-          to="/galeria"
+          to="/portfolio"
           className="font-body text-sm tracking-wider uppercase px-8 py-3.5 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors duration-300"
         >
           Ver Portfólio
