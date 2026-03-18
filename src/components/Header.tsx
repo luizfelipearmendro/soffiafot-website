@@ -1,42 +1,92 @@
 import { motion } from "framer-motion";
-import { Camera, Instagram, Mail, Phone } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
-const NAV_LINKS = ["Sobre", "Serviços", "Equipe", "Galeria", "Contato"];
+const NAV_LINKS = [
+  { label: "Home", to: "/" },
+  { label: "Sobre", to: "/sobre" },
+  { label: "Serviços", to: "/servicos" },
+  { label: "Portfólio", to: "/portfolio" },
+  { label: "Equipe", to: "/equipe" },
+  { label: "Blog", to: "/blog" },
+  { label: "Contato", to: "/contato" },
+];
 
-const Header = () => (
-  <motion.header
-    initial={{ opacity: 0, y: -20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8 }}
-    className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 py-5 bg-background/80 backdrop-blur-md border-b border-border/50"
-  >
-    <a href="#hero" className="flex items-center gap-2">
-      <img
-        src="https://soffiafotografias.netlify.app/imagensSoff/logoooooo.png"
-        alt="Soffia Fotografias"
-        className="h-10 w-auto brightness-0 invert"
-      />
-    </a>
-    <nav className="hidden md:flex items-center gap-8">
-      {NAV_LINKS.map((link) => (
-        <a
-          key={link}
-          href={`#${link.toLowerCase()}`}
-          className="font-body text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-300"
-        >
-          {link}
-        </a>
-      ))}
-    </nav>
-    <a
-      href="https://wa.me/5565984321637?text=Olá,%20Soffia!%20Gostaria%20de%20saber%20mais%20sobre%20seu%20trabalho."
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-sm font-body tracking-wider uppercase px-5 py-2.5 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+const Header = () => {
+  const location = useLocation();
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  return (
+    <motion.header
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50"
     >
-      Contato
-    </a>
-  </motion.header>
-);
+      <div className="container mx-auto px-6 flex items-center justify-between h-16 md:h-20">
+        <Link to="/" className="flex items-center gap-2">
+          <img
+            src="https://soffiafotografias.netlify.app/imagensSoff/logoooooo.png"
+            alt="Soffia Fotografias"
+            className="h-9 w-auto brightness-0 invert"
+          />
+        </Link>
+
+        {/* Desktop nav */}
+        <nav className="hidden lg:flex items-center gap-7">
+          {NAV_LINKS.map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              className={`font-body text-xs tracking-[0.2em] uppercase transition-colors duration-300 ${
+                location.pathname === link.to
+                  ? "text-primary"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+
+        {/* Mobile toggle */}
+        <button
+          onClick={() => setMobileOpen(!mobileOpen)}
+          className="lg:hidden text-foreground"
+        >
+          {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        </button>
+      </div>
+
+      {/* Mobile nav */}
+      {mobileOpen && (
+        <motion.nav
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: "auto" }}
+          exit={{ opacity: 0, height: 0 }}
+          className="lg:hidden bg-background border-t border-border"
+        >
+          <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
+            {NAV_LINKS.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                onClick={() => setMobileOpen(false)}
+                className={`font-body text-sm tracking-widest uppercase py-2 ${
+                  location.pathname === link.to
+                    ? "text-primary"
+                    : "text-muted-foreground"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </motion.nav>
+      )}
+    </motion.header>
+  );
+};
 
 export default Header;
