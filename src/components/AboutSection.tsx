@@ -18,7 +18,7 @@ const AboutSection = () => {
           >
             <div className="aspect-[3/4] overflow-hidden">
               <img
-                src="https://soffiafotografias.netlify.app/imagensSoff/soff-com-camera.jpg"
+                src="/images/soff-com-camera.jpg"
                 alt="Jullyany Soffia"
                 className="w-full h-full object-cover"
               />

@@ -52,7 +52,7 @@ const HeroSection = () => (
           Ver Portfólio
         </a>
         <a
-          href="#sobre"
+          href="/sobre"
           className="font-body text-sm tracking-wider uppercase px-8 py-3.5 border border-foreground/20 text-foreground hover:border-foreground/50 transition-colors duration-300"
         >
           Saiba Mais
