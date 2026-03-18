@@ -1,3 +1,1 @@
-# Welcome to your Lovable project
-
-TODO: Document your project here
+Modelo criado no Lovable, sigo dando manutenção a partir dele.
