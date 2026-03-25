@@ -12,7 +12,7 @@ const SobrePage = () => (
           <FadeIn>
             <div className="aspect-[3/4] overflow-hidden relative">
               <img
-                src="/images/soff-com-camera.jpg"
+                src="/images/soff/soff-com-camera.jpg"
                 alt="Jullyany Soffia"
                 className="w-full h-full object-cover"
               />

@@ -34,7 +34,7 @@ const Footer = () => {
 
         <div className="mt-20 pt-10 border-t border-border flex flex-col md:flex-row items-center justify-between gap-6">
           <img
-            src="/images/logoooooo.png"
+            src="/images/marca/logoooooo.png"
             alt="Soffia Fotografias"
             className="h-8 w-auto opacity-50"
           />

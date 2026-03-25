@@ -5,15 +5,15 @@ import { Link } from "react-router-dom";
 import { Camera, Film, Smartphone, ArrowRight } from "lucide-react";
 
 const services = [
-  { icon: Camera, title: "Fotografia", desc: "Retratos e ensaios com olhar artístico." },
-  { icon: Film, title: "Videomaker", desc: "Produções audiovisuais emocionantes." },
+  // { icon: Camera, title: "Fotografia", desc: "Retratos e ensaios com olhar artístico." },
   { icon: Smartphone, title: "Fotógrafo Mobile", desc: "Conteúdo profissional para redes." },
+  { icon: Film, title: "Videomaker", desc: "Produções audiovisuais emocionantes." },
 ];
 
 const galleryPreview = [
-  "/images/IMG_3548%202.jpg",
-  "/images/IMG_4106.jpg",
-  "/images/IMG_3592copy.jpg",
+  "/images/ensaios/IMG_3548%202.jpg",
+  "/images/ensaios/IMG_4106.jpg",
+  "/images/ensaios/IMG_3592copy.jpg",
 ];
 
 const Index = () => (
@@ -27,7 +27,7 @@ const Index = () => (
           <FadeIn>
             <div className="aspect-[3/4] overflow-hidden">
               <img
-                src="/images/soff-com-camera.jpg"
+                src="/images/soff/soff-com-camera.jpg"
                 alt="Jullyany Soffia"
                 className="w-full h-full object-cover"
               />
@@ -61,7 +61,7 @@ const Index = () => (
             Nossos <span className="italic">Serviços</span>
           </h2>
         </FadeIn>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {services.map((s, i) => (
             <FadeIn key={s.title} delay={0.1 * i}>
               <div className="p-8 border border-border hover:border-primary/40 bg-card/50 transition-all duration-500 group">

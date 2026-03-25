@@ -5,25 +5,25 @@ import { Camera, Film, Smartphone, CheckCircle } from "lucide-react";
 
 const servicesData = [
   {
-    icon: Camera,
-    title: "Fotografia Profissional",
-    description: "Ensaios fotográficos com olhar artístico e sensível, capturando a essência de cada momento.",
-    features: ["Ensaios individuais e em grupo", "Cobertura de eventos", "Fotografia corporativa", "Book profissional"],
-    image: "/images/IMG_3548%202.jpg",
+    icon: Smartphone,
+    title: "Fotógrafo Mobile",
+    description: "Conteúdo profissional otimizado para redes sociais e plataformas digitais.",
+    features: ["Stories e Reels", "Fotos para Instagram", "Conteúdo para TikTok", "Edição para mobile"],
+    image: "/images/ensaios/IMG_3592copy.jpg",
   },
+  // {
+  //   icon: Camera,
+  //   title: "Fotografia Profissional",
+  //   description: "Ensaios fotográficos com olhar artístico e sensível, capturando a essência de cada momento.",
+  //   features: ["Ensaios individuais e em grupo", "Cobertura de eventos", "Fotografia corporativa", "Book profissional"],
+  //   image: "/images/IMG_3548%202.jpg",
+  // },
   {
     icon: Film,
     title: "Videomaker",
     description: "Produções audiovisuais que contam histórias através do movimento, cor e emoção.",
     features: ["Vídeos institucionais", "Cobertura de eventos", "Conteúdo para redes", "Edição profissional"],
-    image: "/images/IMG_4106.jpg",
-  },
-  {
-    icon: Smartphone,
-    title: "Fotógrafo Mobile",
-    description: "Conteúdo profissional otimizado para redes sociais e plataformas digitais.",
-    features: ["Stories e Reels", "Fotos para Instagram", "Conteúdo para TikTok", "Edição para mobile"],
-    image: "/images/IMG_3592copy.jpg",
+    image: "/images/ensaios/IMG_4106.jpg",
   },
 ];
 

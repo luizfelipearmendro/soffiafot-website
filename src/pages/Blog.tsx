@@ -3,25 +3,30 @@ import PageHero from "@/components/PageHero";
 import FadeIn from "@/components/FadeIn";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import { url } from "inspector";
 
 const posts = [
   {
     title: "A Arte do Retrato Natural",
-    excerpt: "Descubra como capturamos a essência de cada pessoa sem poses forçadas.",
-    image: "/images/IMG_3548%202.jpg",
-    date: "15 Mar 2026",
+    excerpt: "Cores, luz e movimento – cada clique conta uma história.",
+    image: "/images/ensaios/IMG_3548%202.jpg",
+    date: "15 Fev 2025",
+    url: "https://www.instagram.com/p/DGG9Lt0Rw1N/",
   },
   {
     title: "Dicas para Ensaios ao Ar Livre",
-    excerpt: "Os melhores horários, locações e como se preparar para um ensaio inesquecível.",
-    image: "/images/IMG_6886%20-%2027.07.jpg",
-    date: "08 Mar 2026",
+    excerpt: "Naturalmente linda.",
+    image: "/images/ensaios/IMG_6886%20-%2027.07.jpg",
+    date: "27 Jul 2025",
+    url: "https://www.instagram.com/p/DMn438fx8HE/",
+
   },
   {
     title: "Por Trás das Câmeras",
-    excerpt: "Um olhar sobre o processo criativo e os bastidores da Soffia Fotografias.",
-    image: "/images/IMG_3560.jpg",
-    date: "01 Mar 2026",
+    excerpt: "Passos firmes, energia leve e um cenário que inspira.",
+    image: "/images/ensaios/IMG_3560.jpg",
+    date: "15 Fev 2025",
+    url: "https://www.instagram.com/p/DGG9byuRy6Q/",
   },
 ];
 
@@ -42,9 +47,14 @@ const BlogPage = () => (
                   <p className="font-body text-xs text-muted-foreground tracking-wider uppercase mb-3">{post.date}</p>
                   <h3 className="font-display text-xl text-foreground mb-2">{post.title}</h3>
                   <p className="font-body text-sm text-muted-foreground leading-relaxed mb-4">{post.excerpt}</p>
-                  <span className="inline-flex items-center gap-1 font-body text-xs tracking-wider uppercase text-primary">
+                  <a
+                    href={post.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 font-body text-xs tracking-wider uppercase text-primary"
+                  >
                     Ler mais <ArrowRight className="w-3 h-3" />
-                  </span>
+                  </a>
                 </div>
               </article>
             </FadeIn>
