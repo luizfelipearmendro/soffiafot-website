@@ -30,6 +30,9 @@ const photos = [
   { src: "/images/ensaios/IMG_7825-20092025.jpg", cat: "Ensaios" },
   { src: "/images/ensaios/IMG_3780 - Copia.jpg", cat: "Ensaios" },
   { src: "/images/ensaios/IMG_7827-20092025.jpg", cat: "Ensaios" },
+  { src: "/images/fotos corporativas/IMG_9871.JPG.jpeg", cat: "Fotografias Corporativas" },
+  { src: "/images/fotos corporativas/IMG_9893.JPG.jpeg", cat: "Fotografias Corporativas" },
+  { src: "/images/fotos corporativas/IMG_9909.JPG.jpeg", cat: "Fotografias Corporativas" },
 ];
 
 const PortfolioPage = () => {
