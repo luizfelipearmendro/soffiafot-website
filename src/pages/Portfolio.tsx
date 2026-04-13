@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
 import FadeIn from "@/components/FadeIn";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const categories = ["Todos", "Ensaios", "Fotografias Corporativas"];
 
@@ -13,7 +13,7 @@ const photos = [
   { src: "/images/ensaios/manu5.jpeg", cat: "Ensaios" },
   { src: "/images/ensaios/manu6.jpeg", cat: "Ensaios" },
   { src: "/images/ensaios/manu7.jpeg", cat: "Ensaios" },
-  { src: "/images/ensaios/manu8.jpeg", cat: "Ensaios" },          
+  { src: "/images/ensaios/manu8.jpeg", cat: "Ensaios" },
   { src: "/images/ensaios/manu9.jpeg", cat: "Ensaios" },
   { src: "/images/ensaios/emilli-marchese1.jpg", cat: "Ensaios" },
   { src: "/images/ensaios/emilli-marchese2.jpg", cat: "Ensaios" },
@@ -44,8 +44,19 @@ const photos = [
 ];
 
 const PortfolioPage = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
   const [active, setActive] = useState("Todos");
   const filtered = active === "Todos" ? photos : photos.filter((p) => p.cat === active);
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        setSelectedImage(null);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   return (
     <Layout>
@@ -70,15 +81,16 @@ const PortfolioPage = () => {
           </div>
 
           {/* Grid */}
-          <div className="columns-2 md:columns-3 gap-4 space-y-4">
+          <div className="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
             {filtered.map((photo, i) => (
               <FadeIn key={photo.src + active} delay={i * 0.05}>
-                <div className="break-inside-avoid overflow-hidden group">
+                <div className="w-full object-cover cursor-zoom-in group-hover:scale-105 transition-transform duration-700">
                   <img
                     src={photo.src}
                     alt={`Foto - ${photo.cat}`}
-                    className="w-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    className="w-full object-cover group-hover:scale-105 transition-transform duration-700 cursor-pointer"
                     loading="lazy"
+                    onClick={() => setSelectedImage(photo.src)}
                   />
                 </div>
               </FadeIn>
@@ -86,6 +98,18 @@ const PortfolioPage = () => {
           </div>
         </div>
       </section>
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <img
+            src={selectedImage}
+            className="max-h-full max-w-full object-contain"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
     </Layout>
   );
 };
