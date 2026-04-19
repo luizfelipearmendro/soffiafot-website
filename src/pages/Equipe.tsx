@@ -5,7 +5,7 @@ import { Instagram } from "lucide-react";
 
 const team = [
   {
-    name: "Jullyany Soffia",
+    name: "Jullyany Soffia da Silva Santos",
     role: "Fundadora & Fotógrafa",
     image: "/images/soff/soff-com-camera.jpg",
     bio: "Apaixonada por eternizar momentos e transformar cada clique em uma obra de arte.",
@@ -28,7 +28,7 @@ const EquipePage = () => (
                 <h2 className="font-display text-3xl text-foreground mb-2">{member.name}</h2>
                 <p className="font-body text-sm tracking-widest uppercase text-primary mb-4">{member.role}</p>
                 <p className="font-body text-muted-foreground leading-relaxed mb-6">{member.bio}</p>
-                <a href="#" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+                <a href="https://www.instagram.com/ei.soffia_/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors" target="_blank" rel="noopener noreferrer">
                   <Instagram className="w-5 h-5" />
                 </a>
               </div>

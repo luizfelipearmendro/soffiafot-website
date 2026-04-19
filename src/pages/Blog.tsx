@@ -9,22 +9,22 @@ const posts = [
   {
     title: "A Arte do Retrato Natural",
     excerpt: "Cores, luz e movimento – cada clique conta uma história.",
-    image: "/images/ensaios/IMG_3548%202.jpg",
+    image: "/images/ensaios/areh-parque1.jpg",
     date: "15 Fev 2025",
     url: "https://www.instagram.com/p/DGG9Lt0Rw1N/",
   },
   {
     title: "Dicas para Ensaios ao Ar Livre",
     excerpt: "Naturalmente linda.",
-    image: "/images/ensaios/IMG_6886%20-%2027.07.jpg",
+    image: "/images/ensaios/fernanda3.jpg",
     date: "27 Jul 2025",
-    url: "https://www.instagram.com/p/DMn438fx8HE/",
+    url: "https://www.instagram.com/p/DMn5KgnRNEx/",
 
   },
   {
     title: "Por Trás das Câmeras",
     excerpt: "Passos firmes, energia leve e um cenário que inspira.",
-    image: "/images/ensaios/IMG_3560.jpg",
+    image: "/images/ensaios/jude-2.jpg",
     date: "15 Fev 2025",
     url: "https://www.instagram.com/p/DGG9byuRy6Q/",
   },

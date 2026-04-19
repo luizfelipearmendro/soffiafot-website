@@ -11,9 +11,9 @@ const services = [
 ];
 
 const galleryPreview = [
-  "/images/ensaios/IMG_3548%202.jpg",
-  "/images/ensaios/IMG_4106.jpg",
-  "/images/ensaios/IMG_3592copy.jpg",
+  "/images/ensaios/emilli-marchese1.jpg",
+  "/images/ensaios/manu3.jpeg",
+  "/images/ensaios/areh-parque2.jpg",
 ];
 
 const Index = () => (

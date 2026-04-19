@@ -9,7 +9,7 @@ const servicesData = [
     title: "Fotógrafo Mobile",
     description: "Conteúdo profissional otimizado para redes sociais e plataformas digitais.",
     features: ["Stories e Reels", "Fotos para Instagram", "Conteúdo para TikTok", "Edição para mobile"],
-    image: "/images/ensaios/IMG_3592copy.jpg",
+    image: "/images/ensaios/areh-parque2.jpg",
   },
   // {
   //   icon: Camera,
@@ -23,7 +23,7 @@ const servicesData = [
     title: "Videomaker",
     description: "Produções audiovisuais que contam histórias através do movimento, cor e emoção.",
     features: ["Vídeos institucionais", "Cobertura de eventos", "Conteúdo para redes", "Edição profissional"],
-    image: "/images/ensaios/IMG_4106.jpg",
+    image: "/images/ensaios/emilli-marchese5.jpg",
   },
 ];
 

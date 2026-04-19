@@ -47,7 +47,7 @@ const ContatoPage = () => {
               <div className="space-y-6 mb-10">
                 {[
                   { icon: Phone, label: "(65) 98113-5918", href: "tel:+5565981135918" },
-                  { icon: Mail, label: "contato@soffiafotografias.com", href: "mailto:contato@soffiafotografias.com" },
+                  { icon: Mail, label: "jullyanysoffia@icloud.com", href: "mailto:jullyanysoffia@icloud.com" },
                   { icon: MapPin, label: "Cuiabá - MT, Brasil", href: "#" },
                 ].map((item) => (
                   <a key={item.label} href={item.href} className="flex items-center gap-4 text-muted-foreground hover:text-foreground transition-colors group">
