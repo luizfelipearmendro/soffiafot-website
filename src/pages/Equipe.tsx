@@ -7,7 +7,7 @@ const team = [
   {
     name: "Jullyany Soffia da Silva Santos",
     role: "Fundadora & Fotógrafa",
-    image: "/images/soff/soff-com-camera.jpg",
+    image: "/images/soff/soff&camera.jpeg",
     bio: "Apaixonada por eternizar momentos e transformar cada clique em uma obra de arte.",
   },
 ];

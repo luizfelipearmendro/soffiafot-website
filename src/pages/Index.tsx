@@ -27,7 +27,7 @@ const Index = () => (
           <FadeIn>
             <div className="aspect-[3/4] overflow-hidden">
               <img
-                src="/images/soff/soff-com-camera.jpg"
+                src="/images/soff/soff&camera.jpeg"
                 alt="Jullyany Soffia"
                 className="w-full h-full object-cover"
               />
