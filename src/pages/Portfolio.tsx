@@ -70,7 +70,7 @@ const MEDIA_ITEMS: MediaItem[] = [
     type:  "video",
   },
     {
-    src:   "/images/videos/video2.mov",
+    src:   "/images/videos/video2.MOV",
     thumb: "/images/videos/thumbvideo2.jpeg",
     cat:   "Vídeos",
     type:  "video",
