@@ -61,9 +61,17 @@ const MEDIA_ITEMS: MediaItem[] = [
   { src: "/images/fotos corporativas/IMG_9871.JPG.jpeg",                       cat: "Fotografias Corporativas", type: "image" },
   { src: "/images/fotos corporativas/IMG_9893.JPG.jpeg",                       cat: "Fotografias Corporativas", type: "image" },
   { src: "/images/fotos corporativas/IMG_9909.JPG.jpeg",                       cat: "Fotografias Corporativas", type: "image" },
+  
+  // Vídeos
   {
     src:   "/images/videos/copy_5D799E10-2CB6-4CCE-A60A-69F53A0AE2B2.mov",
     thumb: "/images/videos/thumb1.jpg",
+    cat:   "Vídeos",
+    type:  "video",
+  },
+    {
+    src:   "/images/videos/video2.mov",
+    thumb: "/images/videos/thumbvideo2.jpeg",
     cat:   "Vídeos",
     type:  "video",
   },
