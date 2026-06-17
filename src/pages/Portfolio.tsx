@@ -26,54 +26,72 @@ const CATEGORIES: Category[] = [
 ];
 
 const MEDIA_ITEMS: MediaItem[] = [
-  { src: "/images/ensaios/manu1.jpeg",                                         cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/manu2.jpeg",                                         cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/manu3.jpeg",                                         cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/manu4.jpeg",                                         cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/manu5.jpeg",                                         cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/manu6.jpeg",                                         cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/manu7.jpeg",                                         cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/manu8.jpeg",                                         cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/manu9.jpeg",                                         cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/emilli-marchese1.jpg",                               cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/emilli-marchese2.jpg",                               cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/emilli-marchese3.jpg",                               cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/emilli-marchese4.jpg",                               cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/emilli-marchese5.jpg",                               cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/areh-carro1.jpg",                                    cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/areh-carro2.jpg",                                    cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/areh-carro3.jpg",                                    cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/areh-carro4.jpg",                                    cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/areh-carro5.jpg",                                    cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/fernanda1.jpg",                                      cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/fernanda2.jpg",                                      cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/fernanda3.jpg",                                      cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/fernanda4.jpg",                                      cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/areh-parque1.jpg",                                   cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/areh-parque2.jpg",                                   cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/jude-1.jpg",                                         cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/jude-2.jpg",                                         cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/jude-3.jpg",                                         cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/maria&filha1.jpg",                                   cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/maria&filha2.jpg",                                   cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/maria&filha3.jpg",                                   cat: "Ensaios",                  type: "image" },
-  { src: "/images/ensaios/maria&filha4.jpg",                                   cat: "Ensaios",                  type: "image" },
-  { src: "/images/fotos corporativas/IMG_9871.JPG.jpeg",                       cat: "Fotografias Corporativas", type: "image" },
-  { src: "/images/fotos corporativas/IMG_9893.JPG.jpeg",                       cat: "Fotografias Corporativas", type: "image" },
-  { src: "/images/fotos corporativas/IMG_9909.JPG.jpeg",                       cat: "Fotografias Corporativas", type: "image" },
-  
+  { src: "/images/ensaios/manu1.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/manu2.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/manu3.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/manu4.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/manu5.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/manu6.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/manu7.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/manu8.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/manu9.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/emilli-marchese1.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/emilli-marchese2.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/emilli-marchese3.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/emilli-marchese4.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/emilli-marchese5.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/areh-carro1.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/areh-carro2.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/areh-carro3.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/areh-carro4.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/areh-carro5.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/fernanda1.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/fernanda2.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/fernanda3.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/fernanda4.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/areh-parque1.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/areh-parque2.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/jude-1.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/jude-2.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/jude-3.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/maria&filha1.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/maria&filha2.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/maria&filha3.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/maria&filha4.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/fotos corporativas/IMG_9871.JPG.jpeg", cat: "Fotografias Corporativas", type: "image" },
+  { src: "/images/fotos corporativas/IMG_9893.JPG.jpeg", cat: "Fotografias Corporativas", type: "image" },
+  { src: "/images/fotos corporativas/IMG_9909.JPG.jpeg", cat: "Fotografias Corporativas", type: "image" },
+
   // Vídeos
   {
-    src:   "/images/videos/copy_5D799E10-2CB6-4CCE-A60A-69F53A0AE2B2.mov",
+    src: "/images/videos/copy_5D799E10-2CB6-4CCE-A60A-69F53A0AE2B2.mov",
     thumb: "/images/videos/thumb1.jpg",
-    cat:   "Vídeos",
-    type:  "video",
+    cat: "Vídeos",
+    type: "video",
   },
-    {
-    src:   "/images/videos/video2.MOV",
-    thumb: "/images/videos/thumbvideo2.jpeg",
-    cat:   "Vídeos",
-    type:  "video",
+  {
+    src: "/images/videos/video arena.MOV",
+    thumb: "/images/videos/thumb arena.jpeg",
+    cat: "Vídeos",
+    type: "video",
+  },
+  {
+    src: "/images/videos/Entre cortes. 2° bimestre .MOV",
+    thumb: "/images/videos/thumb trab 2º bimestre.jpg",
+    cat: "Vídeos",
+    type: "video",
+  },
+  {
+    src: "/images/videos/Pré inauguração useareh.MOV",
+    thumb: "/images/videos/thumb useareh.png",
+    cat: "Vídeos",
+    type: "video",
+  },
+  {
+    src: "/images/videos/aniversario-jorge.MOV",
+    thumb: "/images/videos/thumb aniversario jorge.jpeg",
+    cat: "Vídeos",
+    type: "video",
   },
 ];
 
@@ -90,11 +108,10 @@ const FilterBar = ({ active, onChange }: FilterBarProps) => (
       <button
         key={cat}
         onClick={() => onChange(cat)}
-        className={`font-body text-xs tracking-[0.2em] uppercase px-6 py-2.5 border transition-all duration-300 ${
-          active === cat
-            ? "border-primary bg-primary text-primary-foreground"
-            : "border-border text-muted-foreground hover:border-foreground/30"
-        }`}
+        className={`font-body text-xs tracking-[0.2em] uppercase px-6 py-2.5 border transition-all duration-300 ${active === cat
+          ? "border-primary bg-primary text-primary-foreground"
+          : "border-border text-muted-foreground hover:border-foreground/30"
+          }`}
       >
         {cat}
       </button>
