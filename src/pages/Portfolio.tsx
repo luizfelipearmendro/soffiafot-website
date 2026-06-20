@@ -7,7 +7,7 @@ import FadeIn from "@/components/FadeIn";
 
 type MediaType = "image" | "video";
 
-type Category = "Todos" | "Ensaios" | "Fotografias Corporativas" | "Vídeos";
+type Category = "Todos" | "Ensaios" | "Fotografias Corporativas" | "Trabalhos" | "Vídeos";
 
 interface MediaItem {
   src: string;
@@ -22,10 +22,14 @@ const CATEGORIES: Category[] = [
   "Todos",
   "Ensaios",
   "Fotografias Corporativas",
+  "Trabalhos",
   "Vídeos",
 ];
 
 const MEDIA_ITEMS: MediaItem[] = [
+  { src: "/images/trabalhos/cris e rick 1.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/cris e rick 2.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/cris e rick 3.jpeg", cat: "Trabalhos", type: "image" },
   { src: "/images/ensaios/manu1.jpeg", cat: "Ensaios", type: "image" },
   { src: "/images/ensaios/manu2.jpeg", cat: "Ensaios", type: "image" },
   { src: "/images/ensaios/manu3.jpeg", cat: "Ensaios", type: "image" },
@@ -64,8 +68,8 @@ const MEDIA_ITEMS: MediaItem[] = [
 
   // Vídeos
   {
-    src: "/images/videos/copy_5D799E10-2CB6-4CCE-A60A-69F53A0AE2B2.mov",
-    thumb: "/images/videos/thumb1.jpg",
+    src: "/images/videos/Cris & Pedro.MOV",
+    thumb: "/images/videos/thumb cris e rick.jpeg",
     cat: "Vídeos",
     type: "video",
   },
@@ -76,8 +80,8 @@ const MEDIA_ITEMS: MediaItem[] = [
     type: "video",
   },
   {
-    src: "/images/videos/Entre cortes. 2° bimestre .MOV",
-    thumb: "/images/videos/thumb trab 2º bimestre.jpg",
+    src: "/images/videos/copy_5D799E10-2CB6-4CCE-A60A-69F53A0AE2B2.mov",
+    thumb: "/images/videos/thumb1.jpg",
     cat: "Vídeos",
     type: "video",
   },
@@ -90,6 +94,12 @@ const MEDIA_ITEMS: MediaItem[] = [
   {
     src: "/images/videos/aniversario-jorge.MOV",
     thumb: "/images/videos/thumb aniversario jorge.jpeg",
+    cat: "Vídeos",
+    type: "video",
+  },
+  {
+    src: "/images/videos/Entre cortes. 2° bimestre .MOV",
+    thumb: "/images/videos/thumb trab 2º bimestre.jpg",
     cat: "Vídeos",
     type: "video",
   },

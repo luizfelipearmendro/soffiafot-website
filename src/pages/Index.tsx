@@ -11,9 +11,9 @@ const services = [
 ];
 
 const galleryPreview = [
+  "/images/trabalhos/cris e rick 1.jpeg",
   "/images/ensaios/emilli-marchese1.jpg",
   "/images/ensaios/manu3.jpeg",
-  "/images/ensaios/areh-parque2.jpg",
 ];
 
 const Index = () => (

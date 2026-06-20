@@ -7,19 +7,26 @@ import { url } from "inspector";
 
 const posts = [
   {
+    title: "Eles disseram SIM! ✨",
+    excerpt: "Crys & Pedro 💍",
+    image: "/images/trabalhos/cris e rick 3.jpeg",
+    date: "19 Jun 2026",
+    url: "https://www.instagram.com/p/DZxrR5-kUDK/",
+
+  },
+  {
+    title: "Luz natural, movimento e leveza",
+    excerpt: "Momentos reais, espontâneos e cheios de vida.",
+    image: "/images/ensaios/manu3.jpeg",
+    date: "18 Abr 2026",
+    url: "https://www.instagram.com/p/DXFDfWgkTzh/",
+  },
+  {
     title: "A Arte do Retrato Natural",
     excerpt: "Cores, luz e movimento – cada clique conta uma história.",
     image: "/images/ensaios/areh-parque1.jpg",
     date: "15 Fev 2025",
     url: "https://www.instagram.com/p/DGG9Lt0Rw1N/",
-  },
-  {
-    title: "Dicas para Ensaios ao Ar Livre",
-    excerpt: "Naturalmente linda.",
-    image: "/images/ensaios/fernanda3.jpg",
-    date: "27 Jul 2025",
-    url: "https://www.instagram.com/p/DMn5KgnRNEx/",
-
   },
   {
     title: "Por Trás das Câmeras",
