@@ -28,8 +28,10 @@ const CATEGORIES: Category[] = [
 
 const MEDIA_ITEMS: MediaItem[] = [
   { src: "/images/trabalhos/cris e rick 1.jpeg", cat: "Trabalhos", type: "image" },
-  { src: "/images/trabalhos/cris e rick 2.jpeg", cat: "Trabalhos", type: "image" },
   { src: "/images/trabalhos/cris e rick 3.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/cris e rick 4.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/cris e rick 5.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/cris e rick 6.jpeg", cat: "Trabalhos", type: "image" },
   { src: "/images/ensaios/manu1.jpeg", cat: "Ensaios", type: "image" },
   { src: "/images/ensaios/manu2.jpeg", cat: "Ensaios", type: "image" },
   { src: "/images/ensaios/manu3.jpeg", cat: "Ensaios", type: "image" },
