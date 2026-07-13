@@ -93,6 +93,12 @@ const MEDIA_ITEMS: MediaItem[] = [
     cat: "Vídeos",
     type: "video",
   },
+    {
+    src: "/images/videos/Vídeo festa emilly.MOV",
+    thumb: "/images/videos/thumb festa emilly.jpeg",
+    cat: "Vídeos",
+    type: "video",
+  },
 ];
 
 // ─── Sub-components ───────────────────────────────────────────────────────────
