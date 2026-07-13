@@ -25,7 +25,7 @@ const SobrePage = () => (
             </h2>
             <div className="space-y-4 font-body text-muted-foreground leading-relaxed">
               <p>
-                Fundadora da Soffia Fotografias. Por trás de cada <strong className="text-foreground">obrigado</strong> está o motivo pelo qual nunca desisto. Cada história, cada transformação, é o combustível para continuar fazendo a diferença.
+                Fundadora da Soffia Visual. Por trás de cada <strong className="text-foreground">obrigado</strong> está o motivo pelo qual nunca desisto. Cada história, cada transformação, é o combustível para continuar fazendo a diferença.
               </p>
               <p>
                 Retratos são a celebração da vida em sua forma mais pura. Cada sorriso capturado, cada olhar sincero, guarda a magia de um momento que jamais se repetirá. São memórias vivas que transbordam emoção, um lembrete de que a beleza está nas pessoas que amamos e nas histórias que compartilhamos.

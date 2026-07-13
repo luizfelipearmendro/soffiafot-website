@@ -39,7 +39,7 @@ const Index = () => (
               Jullyany <span className="italic">Soffia</span>
             </h2>
             <p className="font-body text-muted-foreground leading-relaxed mb-6">
-              Fundadora da Soffia Fotografias. Cada história, cada transformação, é o combustível para continuar fazendo a diferença.
+              Fundadora da Soffia Visual. Cada história, cada transformação, é o combustível para continuar fazendo a diferença.
             </p>
             <Link
               to="/sobre"

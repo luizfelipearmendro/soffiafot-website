@@ -7,7 +7,7 @@ const HeroSection = () => (
     <div className="absolute inset-0">
       <img
         src="/images/soff/soff&camera.jpeg"
-        alt="Soffia Fotografias"
+        alt="Soffia Visual"
         className="w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/20" />
@@ -20,7 +20,7 @@ const HeroSection = () => (
         transition={{ delay: 0.3, duration: 0.8 }}
         className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-4"
       >
-        Soffia Fotografias
+        Soffia Visual
       </motion.p>
       <motion.h1
         initial={{ opacity: 0, y: 30 }}

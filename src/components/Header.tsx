@@ -28,7 +28,7 @@ const Header = () => {
         <Link to="/" className="flex items-center gap-2">
           <img
             src="/images/marca/logoooooo.png"
-            alt="Soffia Fotografias"
+            alt="Soffia Visual"
             className="h-9 w-auto"
           />
         </Link>

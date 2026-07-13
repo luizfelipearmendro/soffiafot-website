@@ -35,7 +35,7 @@ const Footer = () => {
         <div className="mt-20 pt-10 border-t border-border flex flex-col md:flex-row items-center justify-between gap-6">
           <img
             src="/images/marca/logoooooo.png"
-            alt="Soffia Fotografias"
+            alt="Soffia Visual"
             className="h-8 w-auto opacity-50"
           />
           <div className="flex items-center gap-6">
@@ -50,7 +50,7 @@ const Footer = () => {
             </a>
           </div>
           <p className="font-body text-xs text-muted-foreground">
-            © 2026 Soffia Fotografias. Todos os direitos reservados.
+            © 2026 Soffia Visual. Todos os direitos reservados.
           </p>
         </div>
       </div>

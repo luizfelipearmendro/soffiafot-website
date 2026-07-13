@@ -36,7 +36,7 @@ const AboutSection = () => {
               Jullyany <span className="italic">Soffia</span>
             </h2>
             <p className="font-body text-muted-foreground leading-relaxed mb-4">
-              Fundadora da Soffia Fotografias. Por trás de cada <strong className="text-foreground">obrigado</strong> está o motivo pelo qual nunca desisto. Cada história, cada transformação, é o combustível para continuar fazendo a diferença.
+              Fundadora da Soffia Visual. Por trás de cada <strong className="text-foreground">obrigado</strong> está o motivo pelo qual nunca desisto. Cada história, cada transformação, é o combustível para continuar fazendo a diferença.
             </p>
             <p className="font-body text-muted-foreground leading-relaxed mb-8">
               Retratos são a celebração da vida em sua forma mais pura. Cada sorriso capturado, cada olhar sincero, guarda a magia de um momento que jamais se repetirá.
