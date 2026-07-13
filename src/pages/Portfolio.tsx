@@ -94,7 +94,7 @@ const MEDIA_ITEMS: MediaItem[] = [
     type: "video",
   },
     {
-    src: "/images/videos/Vídeo festa emilly.MOV",
+    src: "/images/videos/Vídeo festa emilly.MOV",
     thumb: "/images/videos/thumb festa emilly.jpeg",
     cat: "Vídeos",
     type: "video",
