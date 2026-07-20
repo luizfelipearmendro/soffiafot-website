@@ -7,7 +7,7 @@ import FadeIn from "@/components/FadeIn";
 
 type MediaType = "image" | "video";
 
-type Category = "Todos" | "Ensaios" | "Fotografias Corporativas" | "Vídeos";
+type Category = "Todos" | "Ensaios" | "Trabalhos" | "Vídeos";
 
 interface MediaItem {
   src: string;
@@ -21,11 +21,25 @@ interface MediaItem {
 const CATEGORIES: Category[] = [
   "Todos",
   "Ensaios",
-  "Fotografias Corporativas",
+  "Trabalhos",
   "Vídeos",
 ];
 
 const MEDIA_ITEMS: MediaItem[] = [
+  { src: "/images/trabalhos/aniversario-15-years-2.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/aniversario-15-years-3.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/aniversario-15-years-1.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/aniversario-15-years-4.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/aniversario-15-years-5.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/aniversario-15-years-6.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/aniversario-15-years-7.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/aniversario-15-years-8.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/aniversario-15-years-9.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/aniversario-15-years-10.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/ensaios/useareh-3.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/useareh-4.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/useareh-5.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/useareh-6.jpeg", cat: "Ensaios", type: "image" },
   { src: "/images/ensaios/manu1.jpeg", cat: "Ensaios", type: "image" },
   { src: "/images/ensaios/manu2.jpeg", cat: "Ensaios", type: "image" },
   { src: "/images/ensaios/manu3.jpeg", cat: "Ensaios", type: "image" },
@@ -40,15 +54,20 @@ const MEDIA_ITEMS: MediaItem[] = [
   { src: "/images/ensaios/emilli-marchese3.jpg", cat: "Ensaios", type: "image" },
   { src: "/images/ensaios/emilli-marchese4.jpg", cat: "Ensaios", type: "image" },
   { src: "/images/ensaios/emilli-marchese5.jpg", cat: "Ensaios", type: "image" },
-  { src: "/images/ensaios/areh-carro1.jpg", cat: "Ensaios", type: "image" },
-  { src: "/images/ensaios/areh-carro2.jpg", cat: "Ensaios", type: "image" },
-  { src: "/images/ensaios/areh-carro3.jpg", cat: "Ensaios", type: "image" },
-  { src: "/images/ensaios/areh-carro4.jpg", cat: "Ensaios", type: "image" },
-  { src: "/images/ensaios/areh-carro5.jpg", cat: "Ensaios", type: "image" },
+  // { src: "/images/ensaios/areh-carro1.jpg", cat: "Ensaios", type: "image" },
+  // { src: "/images/ensaios/areh-carro2.jpg", cat: "Ensaios", type: "image" },
+  // { src: "/images/ensaios/areh-carro3.jpg", cat: "Ensaios", type: "image" },
+  // { src: "/images/ensaios/areh-carro4.jpg", cat: "Ensaios", type: "image" },
+  // { src: "/images/ensaios/areh-carro5.jpg", cat: "Ensaios", type: "image" },
   { src: "/images/ensaios/fernanda1.jpg", cat: "Ensaios", type: "image" },
   { src: "/images/ensaios/fernanda2.jpg", cat: "Ensaios", type: "image" },
   { src: "/images/ensaios/fernanda3.jpg", cat: "Ensaios", type: "image" },
   { src: "/images/ensaios/fernanda4.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/trabalhos/cris e rick 1.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/cris e rick 3.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/cris e rick 4.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/cris e rick 5.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/cris e rick 6.jpeg", cat: "Trabalhos", type: "image" },
   { src: "/images/ensaios/areh-parque1.jpg", cat: "Ensaios", type: "image" },
   { src: "/images/ensaios/areh-parque2.jpg", cat: "Ensaios", type: "image" },
   { src: "/images/ensaios/jude-1.jpg", cat: "Ensaios", type: "image" },
@@ -58,44 +77,57 @@ const MEDIA_ITEMS: MediaItem[] = [
   { src: "/images/ensaios/maria&filha2.jpg", cat: "Ensaios", type: "image" },
   { src: "/images/ensaios/maria&filha3.jpg", cat: "Ensaios", type: "image" },
   { src: "/images/ensaios/maria&filha4.jpg", cat: "Ensaios", type: "image" },
-  { src: "/images/fotos corporativas/IMG_9871.JPG.jpeg", cat: "Fotografias Corporativas", type: "image" },
-  { src: "/images/fotos corporativas/IMG_9893.JPG.jpeg", cat: "Fotografias Corporativas", type: "image" },
-  { src: "/images/fotos corporativas/IMG_9909.JPG.jpeg", cat: "Fotografias Corporativas", type: "image" },
+  // { src: "/images/trabalhos/deufome1.jpeg", cat: "Trabalhos", type: "image" },
+  // { src: "/images/trabalhos/deufome2.jpeg", cat: "Trabalhos", type: "image" },
+  // { src: "/images/trabalhos/deufome3.jpeg", cat: "Trabalhos", type: "image" },
+
 
   // Vídeos
   {
-    src: "/images/videos/copy_5D799E10-2CB6-4CCE-A60A-69F53A0AE2B2.mov",
+    src: "/images/videos/trab-spotfy.mp4",
     thumb: "/images/videos/thumb1.jpg",
     cat: "Vídeos",
     type: "video",
   },
   {
-    src: "/images/videos/video arena.MOV",
-    thumb: "/images/videos/thumb arena.jpeg",
+    src: "/images/videos/video-arena.mp4",
+    thumb: "/images/videos/thumb-arena.jpeg",
     cat: "Vídeos",
     type: "video",
   },
   {
-    src: "/images/videos/Entre cortes. 2° bimestre .MOV",
-    thumb: "/images/videos/thumb trab 2º bimestre.jpg",
+    src: "/images/videos/entre-cortes-trab.mp4",
+    thumb: "/images/videos/thumb-trab-entre-cortes.jpg",
     cat: "Vídeos",
     type: "video",
   },
   {
-    src: "/images/videos/Pré inauguração useareh.MOV",
-    thumb: "/images/videos/thumb useareh.png",
+    src: "/images/videos/pre-inauguracao-useareh.mp4",
+    thumb: "/images/videos/thumb-useareh.png",
     cat: "Vídeos",
     type: "video",
   },
   {
-    src: "/images/videos/aniversario-jorge.MOV",
-    thumb: "/images/videos/thumb aniversario jorge.jpeg",
+    src: "/images/videos/aniversario-jorge.mp4",
+    thumb: "/images/videos/thumb-aniversario-jorge.jpeg",
     cat: "Vídeos",
     type: "video",
   },
-    {
-    src: "/images/videos/Vídeo festa emilly.MOV",
-    thumb: "/images/videos/thumb festa emilly.jpeg",
+  {
+    src: "/images/videos/video-festa-emilly.mp4",
+    thumb: "/images/videos/thumb-festa-emilly.jpeg",
+    cat: "Vídeos",
+    type: "video",
+  },
+  {
+    src: "/images/videos/useareh-1.mp4",
+    thumb: "/images/ensaios/useareh-3.jpeg",
+    cat: "Vídeos",
+    type: "video",
+  },
+  {
+    src: "/images/videos/useareh-2.mp4",
+    thumb: "/images/ensaios/useareh-4.jpeg",
     cat: "Vídeos",
     type: "video",
   },
