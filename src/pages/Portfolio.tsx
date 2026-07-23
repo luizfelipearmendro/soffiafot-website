@@ -149,6 +149,13 @@ const MEDIA_ITEMS: MediaItem[] = [
     cat: "Vídeos",
     type: "video",
   },
+  {
+    order: 63,
+    src: "/images/videos/aniversario-15-years-01.mp4",
+    thumb: "/images/trabalhos/aniversario-15-years-01.jpeg",
+    cat: "Vídeos",
+    type: "video",
+  },
 ];
 
 // ─── Sub-components ───────────────────────────────────────────────────────────
