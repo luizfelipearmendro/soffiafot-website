@@ -10,152 +10,155 @@ type MediaType = "image" | "video";
 type Category = "Todos" | "Ensaios" | "Trabalhos" | "Vídeos";
 
 interface MediaItem {
-  order: number;
   src: string;
   cat: Exclude<Category, "Todos">;
   type: MediaType;
   thumb?: string;
 }
 
-// ─── Constants ────────────────────────────────────────────────────────────────
-
-const CATEGORIES: Category[] = [
-  "Todos",
-  "Ensaios",
-  "Trabalhos",
-  "Vídeos",
-];
+const CATEGORIES: Category[] = ["Todos", "Ensaios", "Trabalhos", "Vídeos"];
 
 const MEDIA_ITEMS: MediaItem[] = [
-  { order: 1, src: "/images/trabalhos/aniversario-15-years-01.jpeg", cat: "Trabalhos", type: "image" },
-  { order: 2, src: "/images/trabalhos/aniversario-15-years-02.jpeg", cat: "Trabalhos", type: "image" },
-  { order: 3, src: "/images/trabalhos/aniversario-15-years-03.jpeg", cat: "Trabalhos", type: "image" },
-  { order: 4, src: "/images/trabalhos/aniversario-15-years-04.jpeg", cat: "Trabalhos", type: "image" },
-  { order: 5, src: "/images/trabalhos/aniversario-15-years-05.jpeg", cat: "Trabalhos", type: "image" },
-  { order: 6, src: "/images/trabalhos/aniversario-15-years-06.jpeg", cat: "Trabalhos", type: "image" },
-  { order: 7, src: "/images/trabalhos/aniversario-15-years-07.jpeg", cat: "Trabalhos", type: "image" },
-  { order: 8, src: "/images/trabalhos/aniversario-15-years-08.jpeg", cat: "Trabalhos", type: "image" },
-  { order: 9, src: "/images/trabalhos/aniversario-15-years-09.jpeg", cat: "Trabalhos", type: "image" },
-  { order: 10, src: "/images/trabalhos/aniversario-15-years-10.jpeg", cat: "Trabalhos", type: "image" },
 
-  { order: 11, src: "/images/ensaios/useareh-3.jpeg", cat: "Ensaios", type: "image" },
-  { order: 12, src: "/images/ensaios/useareh-4.jpeg", cat: "Ensaios", type: "image" },
-  { order: 13, src: "/images/ensaios/useareh-5.jpeg", cat: "Ensaios", type: "image" },
-  { order: 14, src: "/images/ensaios/useareh-6.jpeg", cat: "Ensaios", type: "image" },
+  // ─── Ensaios: Andiara ───────────────────────────────────────
+  { src: "/images/ensaios/andiara1.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/andiara2.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/andiara3.jpeg", cat: "Ensaios", type: "image" },
 
-  { order: 15, src: "/images/ensaios/areh-parque1.jpg", cat: "Ensaios", type: "image" },
-  { order: 16, src: "/images/ensaios/areh-parque2.jpg", cat: "Ensaios", type: "image" },
+  // ─── Trabalhos: Aniversário 15 anos ───────────────────────────────────────
+  { src: "/images/trabalhos/aniversario-15-years-01.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/aniversario-15-years-02.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/aniversario-15-years-03.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/aniversario-15-years-04.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/aniversario-15-years-05.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/aniversario-15-years-06.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/aniversario-15-years-07.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/aniversario-15-years-08.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/aniversario-15-years-09.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/aniversario-15-years-10.jpeg", cat: "Trabalhos", type: "image" },
 
-  { order: 17, src: "/images/trabalhos/cris e rick 1.jpeg", cat: "Trabalhos", type: "image" },
-  { order: 18, src: "/images/trabalhos/cris e rick 3.jpeg", cat: "Trabalhos", type: "image" },
-  { order: 19, src: "/images/trabalhos/cris e rick 4.jpeg", cat: "Trabalhos", type: "image" },
-  { order: 20, src: "/images/trabalhos/cris e rick 5.jpeg", cat: "Trabalhos", type: "image" },
-  { order: 21, src: "/images/trabalhos/cris e rick 6.jpeg", cat: "Trabalhos", type: "image" },
+  // ─── Ensaios: Useareh ──────────────────────────────────────────────────────
+  { src: "/images/ensaios/useareh-3.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/useareh-4.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/useareh-5.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/useareh-6.jpeg", cat: "Ensaios", type: "image" },
 
-  { order: 41, src: "/images/ensaios/manu1.jpeg", cat: "Ensaios", type: "image" },
-  { order: 42, src: "/images/ensaios/manu2.jpeg", cat: "Ensaios", type: "image" },
-  { order: 43, src: "/images/ensaios/manu3.jpeg", cat: "Ensaios", type: "image" },
-  { order: 44, src: "/images/ensaios/manu4.jpeg", cat: "Ensaios", type: "image" },
-  { order: 45, src: "/images/ensaios/manu5.jpeg", cat: "Ensaios", type: "image" },
-  { order: 46, src: "/images/ensaios/manu6.jpeg", cat: "Ensaios", type: "image" },
-  { order: 47, src: "/images/ensaios/manu7.jpeg", cat: "Ensaios", type: "image" },
-  { order: 48, src: "/images/ensaios/manu8.jpeg", cat: "Ensaios", type: "image" },
-  { order: 49, src: "/images/ensaios/manu9.jpeg", cat: "Ensaios", type: "image" },
+  // ─── Ensaios: Areh Parque ──────────────────────────────────────────────────
+  { src: "/images/ensaios/areh-parque1.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/areh-parque2.jpg", cat: "Ensaios", type: "image" },
 
-  { order: 29, src: "/images/ensaios/emilli-marchese1.jpg", cat: "Ensaios", type: "image" },
-  { order: 30, src: "/images/ensaios/emilli-marchese2.jpg", cat: "Ensaios", type: "image" },
-  { order: 31, src: "/images/ensaios/emilli-marchese3.jpg", cat: "Ensaios", type: "image" },
-  { order: 32, src: "/images/ensaios/emilli-marchese4.jpg", cat: "Ensaios", type: "image" },
-  // { order: 35, src: "/images/ensaios/emilli-marchese5.jpg", cat: "Ensaios", type: "image" },
+  // ─── Trabalhos: Cris e Rick ─────────────────────────────────────────────────
+  { src: "/images/trabalhos/cris e rick 1.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/cris e rick 3.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/cris e rick 4.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/cris e rick 5.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/cris e rick 6.jpeg", cat: "Trabalhos", type: "image" },
 
-  // { order: 36, src: "/images/ensaios/areh-carro1.jpg", cat: "Ensaios", type: "image" },
-  // { order: 37, src: "/images/ensaios/areh-carro2.jpg", cat: "Ensaios", type: "image" },
-  // { order: 38, src: "/images/ensaios/areh-carro3.jpg", cat: "Ensaios", type: "image" },
-  // { order: 39, src: "/images/ensaios/areh-carro4.jpg", cat: "Ensaios", type: "image" },
-  // { order: 40, src: "/images/ensaios/areh-carro5.jpg", cat: "Ensaios", type: "image" },
+  // ─── Ensaios: Fernanda ───────────────────────────────────────────────────
+  { src: "/images/ensaios/fernanda1.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/fernanda2.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/fernanda3.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/fernanda4.jpg", cat: "Ensaios", type: "image" },
 
-  { order: 22, src: "/images/ensaios/fernanda1.jpg", cat: "Ensaios", type: "image" },
-  { order: 23, src: "/images/ensaios/fernanda2.jpg", cat: "Ensaios", type: "image" },
-  { order: 24, src: "/images/ensaios/fernanda3.jpg", cat: "Ensaios", type: "image" },
-  { order: 25, src: "/images/ensaios/fernanda4.jpg", cat: "Ensaios", type: "image" },
+  // ─── Ensaios: Emilli Marchese ────────────────────────────────────────────
+  { src: "/images/ensaios/emilli-marchese1.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/emilli-marchese2.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/emilli-marchese3.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/emilli-marchese4.jpg", cat: "Ensaios", type: "image" },
+  // { src: "/images/ensaios/emilli-marchese5.jpg", cat: "Ensaios", type: "image" },
 
-  { order: 32, src: "/images/ensaios/jude-1.jpg", cat: "Ensaios", type: "image" },
-  { order: 33, src: "/images/ensaios/jude-2.jpg", cat: "Ensaios", type: "image" },
+  // ─── Ensaios: Manu ───────────────────────────────────────────────────────
+  { src: "/images/ensaios/manu1.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/manu2.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/manu3.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/manu4.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/manu5.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/manu6.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/manu7.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/manu8.jpeg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/manu9.jpeg", cat: "Ensaios", type: "image" },
 
-  { order: 34, src: "/images/ensaios/maria&filha1.jpg", cat: "Ensaios", type: "image" },
-  { order: 35, src: "/images/ensaios/maria&filha2.jpg", cat: "Ensaios", type: "image" },
-  { order: 36, src: "/images/ensaios/maria&filha3.jpg", cat: "Ensaios", type: "image" },
-  // { order: 37, src: "/images/ensaios/maria&filha4.jpg", cat: "Ensaios", type: "image" },
+  // { src: "/images/ensaios/areh-carro1.jpg", cat: "Ensaios", type: "image" },
+  // { src: "/images/ensaios/areh-carro2.jpg", cat: "Ensaios", type: "image" },
+  // { src: "/images/ensaios/areh-carro3.jpg", cat: "Ensaios", type: "image" },
+  // { src: "/images/ensaios/areh-carro4.jpg", cat: "Ensaios", type: "image" },
+  // { src: "/images/ensaios/areh-carro5.jpg", cat: "Ensaios", type: "image" },
 
-  // { order: 52, src: "/images/trabalhos/deufome1.jpeg", cat: "Trabalhos", type: "image" },
-  // { order: 53, src: "/images/trabalhos/deufome2.jpeg", cat: "Trabalhos", type: "image" },
-  // { order: 54, src: "/images/trabalhos/deufome3.jpeg", cat: "Trabalhos", type: "image" },
+  // ─── Ensaios: Jude ───────────────────────────────────────────────────────
+  { src: "/images/ensaios/jude-1.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/jude-2.jpg", cat: "Ensaios", type: "image" },
 
+  // ─── Ensaios: Maria & Filha ──────────────────────────────────────────────
+  { src: "/images/ensaios/maria&filha1.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/maria&filha2.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/maria&filha3.jpg", cat: "Ensaios", type: "image" },
+  { src: "/images/ensaios/maria&filha4.jpg", cat: "Ensaios", type: "image" },
 
-  // Vídeos
+  // { src: "/images/trabalhos/deufome1.jpeg", cat: "Trabalhos", type: "image" },
+  // { src: "/images/trabalhos/deufome2.jpeg", cat: "Trabalhos", type: "image" },
+  // { src: "/images/trabalhos/deufome3.jpeg", cat: "Trabalhos", type: "image" },
+
+  // ─── Vídeos ───────────────────────────────────────────────────────────────
   {
-    order: 55,
+    src: "/images/videos/aniversario-15-years-01.mp4",
+    thumb: "/images/trabalhos/aniversario-15-years-01.jpeg",
+    cat: "Vídeos",
+    type: "video",
+  },
+  {
     src: "/images/videos/trab-spotfy.mp4",
     thumb: "/images/videos/thumb1.jpg",
     cat: "Vídeos",
     type: "video",
   },
   {
-    order: 56,
     src: "/images/videos/video-arena.mp4",
     thumb: "/images/videos/thumb-arena.jpeg",
     cat: "Vídeos",
     type: "video",
   },
   {
-    order: 57,
-    src: "/images/videos/entre-cortes-trab.mp4",
-    thumb: "/images/videos/thumb-trab-entre-cortes.jpg",
+    src: "/images/videos/video-arena2.mp4",
+    thumb: "/images/videos/thumb-arena.jpeg",
     cat: "Vídeos",
     type: "video",
   },
   {
-    order: 58,
+    src: "/images/videos/entre-cortes-trab.mp4",
+    thumb: "/images/videos/thumb-trab-entre-cortes.png",
+    cat: "Vídeos",
+    type: "video",
+  },
+  {
     src: "/images/videos/pre-inauguracao-useareh.mp4",
     thumb: "/images/videos/thumb-useareh.png",
     cat: "Vídeos",
     type: "video",
   },
   {
-    order: 59,
     src: "/images/videos/aniversario-jorge.mp4",
     thumb: "/images/videos/thumb-aniversario-jorge.jpeg",
     cat: "Vídeos",
     type: "video",
   },
   {
-    order: 60,
     src: "/images/videos/video-festa-emilly.mp4",
     thumb: "/images/videos/thumb-festa-emilly.jpeg",
     cat: "Vídeos",
     type: "video",
   },
   {
-    order: 61,
     src: "/images/videos/useareh-1.mp4",
     thumb: "/images/ensaios/useareh-3.jpeg",
     cat: "Vídeos",
     type: "video",
   },
   {
-    order: 62,
     src: "/images/videos/useareh-2.mp4",
     thumb: "/images/ensaios/useareh-4.jpeg",
     cat: "Vídeos",
     type: "video",
-  },
-  {
-    order: 63,
-    src: "/images/videos/aniversario-15-years-01.mp4",
-    thumb: "/images/trabalhos/aniversario-15-years-01.jpeg",
-    cat: "Vídeos",
-    type: "video",
-  },
+  }
 ];
 
 // ─── Sub-components ───────────────────────────────────────────────────────────
@@ -171,10 +174,11 @@ const FilterBar = ({ active, onChange }: FilterBarProps) => (
       <button
         key={cat}
         onClick={() => onChange(cat)}
-        className={`font-body text-xs tracking-[0.2em] uppercase px-6 py-2.5 border transition-all duration-300 ${active === cat
-          ? "border-primary bg-primary text-primary-foreground"
-          : "border-border text-muted-foreground hover:border-foreground/30"
-          }`}
+        className={`font-body text-xs tracking-[0.2em] uppercase px-6 py-2.5 border transition-all duration-300 ${
+          active === cat
+            ? "border-primary bg-primary text-primary-foreground"
+            : "border-border text-muted-foreground hover:border-foreground/30"
+        }`}
       >
         {cat}
       </button>
@@ -317,11 +321,12 @@ const PortfolioPage = () => {
   const [activeCategory, setActiveCategory] = useState<Category>("Todos");
   const [selectedMedia, setSelectedMedia] = useState<MediaItem | null>(null);
 
+  // A ordem de MEDIA_ITEMS já é a ordem de exibição, então não precisamos
+  // mais de .sort() aqui — filter() preserva a ordem original do array.
   const filtered =
-    (activeCategory === "Todos"
+    activeCategory === "Todos"
       ? MEDIA_ITEMS
-      : MEDIA_ITEMS.filter(item => item.cat === activeCategory)
-    ).sort((a, b) => a.order - b.order);
+      : MEDIA_ITEMS.filter((item) => item.cat === activeCategory);
 
   const handleClose = useCallback(() => setSelectedMedia(null), []);
 
@@ -363,9 +368,7 @@ const PortfolioPage = () => {
         </div>
       </section>
 
-      {selectedMedia && (
-        <Lightbox item={selectedMedia} onClose={handleClose} />
-      )}
+      {selectedMedia && <Lightbox item={selectedMedia} onClose={handleClose} />}
     </Layout>
   );
 };
