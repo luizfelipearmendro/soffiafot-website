@@ -39,7 +39,7 @@ const Footer = () => {
             className="h-8 w-auto opacity-50"
           />
           <div className="flex items-center gap-6">
-            <a href="https://www.instagram.com/soffia.fotografia_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="https://www.instagram.com/soffia.visual?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
               <Instagram className="w-5 h-5" />
             </a>
             <a href="mailto:jullyanysoffia@icloud.com" className="text-muted-foreground hover:text-foreground transition-colors">
