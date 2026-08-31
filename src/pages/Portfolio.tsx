@@ -20,22 +20,66 @@ const CATEGORIES: Category[] = ["Todos", "Ensaios", "Trabalhos", "Vídeos"];
 
 const MEDIA_ITEMS: MediaItem[] = [
 
+  // ─── Trabalhos: Palestra ───────────────────────────────────────────────────
+  { src: "/images/trabalhos/palestra1.jpeg", cat: "Trabalhos", type: "image" },
+  { src: "/images/trabalhos/palestra2.jpeg", cat: "Trabalhos", type: "image" },
+  
   // ─── Ensaios: Andiara ───────────────────────────────────────
   { src: "/images/ensaios/andiara1.jpeg", cat: "Ensaios", type: "image" },
   { src: "/images/ensaios/andiara2.jpeg", cat: "Ensaios", type: "image" },
   { src: "/images/ensaios/andiara3.jpeg", cat: "Ensaios", type: "image" },
 
   // ─── Trabalhos: Aniversário 15 anos ───────────────────────────────────────
-  { src: "/images/trabalhos/aniversario-15-years-01.jpeg", cat: "Trabalhos", type: "image" },
-  { src: "/images/trabalhos/aniversario-15-years-02.jpeg", cat: "Trabalhos", type: "image" },
-  { src: "/images/trabalhos/aniversario-15-years-03.jpeg", cat: "Trabalhos", type: "image" },
-  { src: "/images/trabalhos/aniversario-15-years-04.jpeg", cat: "Trabalhos", type: "image" },
-  { src: "/images/trabalhos/aniversario-15-years-05.jpeg", cat: "Trabalhos", type: "image" },
-  { src: "/images/trabalhos/aniversario-15-years-06.jpeg", cat: "Trabalhos", type: "image" },
-  { src: "/images/trabalhos/aniversario-15-years-07.jpeg", cat: "Trabalhos", type: "image" },
-  { src: "/images/trabalhos/aniversario-15-years-08.jpeg", cat: "Trabalhos", type: "image" },
-  { src: "/images/trabalhos/aniversario-15-years-09.jpeg", cat: "Trabalhos", type: "image" },
-  { src: "/images/trabalhos/aniversario-15-years-10.jpeg", cat: "Trabalhos", type: "image" },
+  {
+    src: "/images/trabalhos/aniversario-15-years-01.jpeg",
+    cat: "Trabalhos",
+    type: "image",
+  },
+  {
+    src: "/images/trabalhos/aniversario-15-years-02.jpeg",
+    cat: "Trabalhos",
+    type: "image",
+  },
+  {
+    src: "/images/trabalhos/aniversario-15-years-03.jpeg",
+    cat: "Trabalhos",
+    type: "image",
+  },
+  {
+    src: "/images/trabalhos/aniversario-15-years-04.jpeg",
+    cat: "Trabalhos",
+    type: "image",
+  },
+  {
+    src: "/images/trabalhos/aniversario-15-years-05.jpeg",
+    cat: "Trabalhos",
+    type: "image",
+  },
+  {
+    src: "/images/trabalhos/aniversario-15-years-06.jpeg",
+    cat: "Trabalhos",
+    type: "image",
+  },
+  {
+    src: "/images/trabalhos/aniversario-15-years-07.jpeg",
+    cat: "Trabalhos",
+    type: "image",
+  },
+  {
+    src: "/images/trabalhos/aniversario-15-years-08.jpeg",
+    cat: "Trabalhos",
+    type: "image",
+  },
+  {
+    src: "/images/trabalhos/aniversario-15-years-09.jpeg",
+    cat: "Trabalhos",
+    type: "image",
+  },
+  {
+    src: "/images/trabalhos/aniversario-15-years-10.jpeg",
+    cat: "Trabalhos",
+    type: "image",
+  },
 
   // ─── Ensaios: Useareh ──────────────────────────────────────────────────────
   { src: "/images/ensaios/useareh-3.jpeg", cat: "Ensaios", type: "image" },
@@ -48,11 +92,31 @@ const MEDIA_ITEMS: MediaItem[] = [
   { src: "/images/ensaios/areh-parque2.jpg", cat: "Ensaios", type: "image" },
 
   // ─── Trabalhos: Cris e Rick ─────────────────────────────────────────────────
-  { src: "/images/trabalhos/cris e rick 1.jpeg", cat: "Trabalhos", type: "image" },
-  { src: "/images/trabalhos/cris e rick 3.jpeg", cat: "Trabalhos", type: "image" },
-  { src: "/images/trabalhos/cris e rick 4.jpeg", cat: "Trabalhos", type: "image" },
-  { src: "/images/trabalhos/cris e rick 5.jpeg", cat: "Trabalhos", type: "image" },
-  { src: "/images/trabalhos/cris e rick 6.jpeg", cat: "Trabalhos", type: "image" },
+  {
+    src: "/images/trabalhos/cris e rick 1.jpeg",
+    cat: "Trabalhos",
+    type: "image",
+  },
+  {
+    src: "/images/trabalhos/cris e rick 3.jpeg",
+    cat: "Trabalhos",
+    type: "image",
+  },
+  {
+    src: "/images/trabalhos/cris e rick 4.jpeg",
+    cat: "Trabalhos",
+    type: "image",
+  },
+  {
+    src: "/images/trabalhos/cris e rick 5.jpeg",
+    cat: "Trabalhos",
+    type: "image",
+  },
+  {
+    src: "/images/trabalhos/cris e rick 6.jpeg",
+    cat: "Trabalhos",
+    type: "image",
+  },
 
   // ─── Ensaios: Fernanda ───────────────────────────────────────────────────
   { src: "/images/ensaios/fernanda1.jpg", cat: "Ensaios", type: "image" },
@@ -61,10 +125,26 @@ const MEDIA_ITEMS: MediaItem[] = [
   { src: "/images/ensaios/fernanda4.jpg", cat: "Ensaios", type: "image" },
 
   // ─── Ensaios: Emilli Marchese ────────────────────────────────────────────
-  { src: "/images/ensaios/emilli-marchese1.jpg", cat: "Ensaios", type: "image" },
-  { src: "/images/ensaios/emilli-marchese2.jpg", cat: "Ensaios", type: "image" },
-  { src: "/images/ensaios/emilli-marchese3.jpg", cat: "Ensaios", type: "image" },
-  { src: "/images/ensaios/emilli-marchese4.jpg", cat: "Ensaios", type: "image" },
+  {
+    src: "/images/ensaios/emilli-marchese1.jpg",
+    cat: "Ensaios",
+    type: "image",
+  },
+  {
+    src: "/images/ensaios/emilli-marchese2.jpg",
+    cat: "Ensaios",
+    type: "image",
+  },
+  {
+    src: "/images/ensaios/emilli-marchese3.jpg",
+    cat: "Ensaios",
+    type: "image",
+  },
+  {
+    src: "/images/ensaios/emilli-marchese4.jpg",
+    cat: "Ensaios",
+    type: "image",
+  },
   // { src: "/images/ensaios/emilli-marchese5.jpg", cat: "Ensaios", type: "image" },
 
   // ─── Ensaios: Manu ───────────────────────────────────────────────────────
@@ -99,6 +179,12 @@ const MEDIA_ITEMS: MediaItem[] = [
   // { src: "/images/trabalhos/deufome3.jpeg", cat: "Trabalhos", type: "image" },
 
   // ─── Vídeos ───────────────────────────────────────────────────────────────
+  {
+    src: "/images/videos/video-palestra.mp4",
+    thumb: "/images/trabalhos/palestra1.jpeg",
+    cat: "Vídeos",
+    type: "video",
+  },
   {
     src: "/images/videos/aniversario-15-years-01.mp4",
     thumb: "/images/trabalhos/aniversario-15-years-01.jpeg",
@@ -158,7 +244,7 @@ const MEDIA_ITEMS: MediaItem[] = [
     thumb: "/images/ensaios/useareh-4.jpeg",
     cat: "Vídeos",
     type: "video",
-  }
+  },
 ];
 
 // ─── Sub-components ───────────────────────────────────────────────────────────
