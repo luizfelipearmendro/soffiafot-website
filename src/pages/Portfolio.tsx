@@ -19,11 +19,10 @@ interface MediaItem {
 const CATEGORIES: Category[] = ["Todos", "Ensaios", "Trabalhos", "Vídeos"];
 
 const MEDIA_ITEMS: MediaItem[] = [
-
   // ─── Trabalhos: Palestra ───────────────────────────────────────────────────
   { src: "/images/trabalhos/palestra1.jpeg", cat: "Trabalhos", type: "image" },
   { src: "/images/trabalhos/palestra2.jpeg", cat: "Trabalhos", type: "image" },
-  
+
   // ─── Ensaios: Andiara ───────────────────────────────────────
   { src: "/images/ensaios/andiara1.jpeg", cat: "Ensaios", type: "image" },
   { src: "/images/ensaios/andiara2.jpeg", cat: "Ensaios", type: "image" },
@@ -179,6 +178,12 @@ const MEDIA_ITEMS: MediaItem[] = [
   // { src: "/images/trabalhos/deufome3.jpeg", cat: "Trabalhos", type: "image" },
 
   // ─── Vídeos ───────────────────────────────────────────────────────────────
+  {
+    src: "/images/videos/video-demonstracao-tecnica(palestra).mp4",
+    thumb: "/images/trabalhos/palestra2.jpeg",
+    cat: "Vídeos",
+    type: "video",
+  },
   {
     src: "/images/videos/video-palestra.mp4",
     thumb: "/images/trabalhos/palestra1.jpeg",
