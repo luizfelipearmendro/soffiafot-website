@@ -36,7 +36,7 @@ const posts = [
   {
     title: "A Arte do Retrato Natural",
     excerpt: "Cores, luz e movimento – cada clique conta uma história.",
-    image: mediaUrl("/ensaios/areh-parque1.jpg"),
+    image: mediaUrl("/ensaios/areh-carro1.jpg"),
     date: "15 Fev 2025",
     url: "https://www.instagram.com/p/DGG9Lt0Rw1N/",
   },

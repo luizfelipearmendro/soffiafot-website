@@ -17,7 +17,7 @@ const servicesData = [
     title: "Fotógrafo Mobile",
     description: "Conteúdo profissional otimizado para redes sociais e plataformas digitais.",
     features: ["Stories e Reels", "Fotos para Instagram", "Conteúdo para TikTok", "Edição para mobile"],
-    image: mediaUrl("/ensaios/areh-parque2.jpg"),
+    image: mediaUrl("/ensaios/manu1.jpeg"),
   },
   {
     icon: Film,

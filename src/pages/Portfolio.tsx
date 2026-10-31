@@ -99,10 +99,6 @@ const MEDIA_ITEMS: MediaItem[] = [
   { src: mediaUrl("/ensaios/useareh-5.jpeg"), title: "Useareh", cat: "Ensaios", type: "image" },
   { src: mediaUrl("/ensaios/useareh-6.jpeg"), title: "Useareh", cat: "Ensaios", type: "image" },
 
-  // ─── Ensaios: Areh Parque ──────────────────────────────────────────────────
-  { src: mediaUrl("/ensaios/areh-parque1.jpg"), title: "Areh Parque", cat: "Ensaios", type: "image" },
-  { src: mediaUrl("/ensaios/areh-parque2.jpg"), title: "Areh Parque", cat: "Ensaios", type: "image" },
-
   // ─── Trabalhos: Crys & Pedro ─────────────────────────────────────────────────
   {
     src: mediaUrl("/trabalhos/cris e rick 1.jpeg"),
@@ -190,9 +186,6 @@ const MEDIA_ITEMS: MediaItem[] = [
   { src: mediaUrl("/ensaios/jude-2.jpg"), title: "Jude", cat: "Ensaios", type: "image" },
 
   // ─── Ensaios: Maria & Filha ──────────────────────────────────────────────
-  { src: mediaUrl("/ensaios/maria&filha1.jpg"), title: "Maria & Filha", cat: "Ensaios", type: "image" },
-  { src: mediaUrl("/ensaios/maria&filha2.jpg"), title: "Maria & Filha", cat: "Ensaios", type: "image" },
-  { src: mediaUrl("/ensaios/maria&filha3.jpg"), title: "Maria & Filha", cat: "Ensaios", type: "image" },
   { src: mediaUrl("/ensaios/maria&filha4.jpg"), title: "Maria & Filha", cat: "Ensaios", type: "image" },
 
   // { src: mediaUrl("/trabalhos/deufome1.jpeg"), cat: "Trabalhos", type: "image" },
@@ -233,30 +226,6 @@ const MEDIA_ITEMS: MediaItem[] = [
   {
     src: "/images/videos/video-arena2.mp4",
     thumb: mediaUrl("/videos/thumb-arena.jpeg"),
-    cat: "Vídeos",
-    type: "video",
-  },
-  {
-    src: "/images/videos/entre-cortes-trab.mp4",
-    thumb: mediaUrl("/videos/thumb-trab-entre-cortes.png"),
-    cat: "Vídeos",
-    type: "video",
-  },
-  {
-    src: "/images/videos/pre-inauguracao-useareh.mp4",
-    thumb: mediaUrl("/videos/thumb-useareh.png"),
-    cat: "Vídeos",
-    type: "video",
-  },
-  {
-    src: "/images/videos/aniversario-jorge.mp4",
-    thumb: mediaUrl("/videos/thumb-aniversario-jorge.jpeg"),
-    cat: "Vídeos",
-    type: "video",
-  },
-  {
-    src: "/images/videos/video-festa-emilly.mp4",
-    thumb: mediaUrl("/videos/thumb-festa-emilly.jpeg"),
     cat: "Vídeos",
     type: "video",
   },
