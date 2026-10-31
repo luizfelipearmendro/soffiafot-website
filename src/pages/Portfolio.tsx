@@ -185,9 +185,6 @@ const MEDIA_ITEMS: MediaItem[] = [
   { src: mediaUrl("/ensaios/jude-1.jpg"), title: "Jude", cat: "Ensaios", type: "image" },
   { src: mediaUrl("/ensaios/jude-2.jpg"), title: "Jude", cat: "Ensaios", type: "image" },
 
-  // ─── Ensaios: Maria & Filha ──────────────────────────────────────────────
-  { src: mediaUrl("/ensaios/maria&filha4.jpg"), title: "Maria & Filha", cat: "Ensaios", type: "image" },
-
   // { src: mediaUrl("/trabalhos/deufome1.jpeg"), cat: "Trabalhos", type: "image" },
   // { src: mediaUrl("/trabalhos/deufome2.jpeg"), cat: "Trabalhos", type: "image" },
   // { src: mediaUrl("/trabalhos/deufome3.jpeg"), cat: "Trabalhos", type: "image" },
