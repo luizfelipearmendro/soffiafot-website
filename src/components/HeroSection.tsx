@@ -1,16 +1,20 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { mediaUrl } from "@/lib/media";
 
 const HeroSection = () => (
   <section id="hero" className="relative min-h-screen flex items-end pb-20 md:pb-32 overflow-hidden">
     {/* Background image */}
     <div className="absolute inset-0">
       <img
-        src="/images/soff/soff&camera.jpeg"
-        alt="Soffia Visual"
+        src={mediaUrl("/marca/hero-mosaic.jpg")}
+        alt="Trabalhos de Soffia Visual"
         className="w-full h-full object-cover"
+        fetchPriority="high"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/20" />
+      <div className="absolute inset-0 bg-background/55" />
+      <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/50 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
     </div>
 
     <div className="relative z-10 container mx-auto px-6">

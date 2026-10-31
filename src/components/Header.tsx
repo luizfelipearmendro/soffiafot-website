@@ -1,14 +1,14 @@
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { mediaUrl } from "@/lib/media";
 
 const NAV_LINKS = [
   { label: "Home", to: "/" },
   { label: "Sobre", to: "/sobre" },
   { label: "Serviços", to: "/servicos" },
   { label: "Portfólio", to: "/portfolio" },
-  { label: "Equipe", to: "/equipe" },
   { label: "Blog", to: "/blog" },
   { label: "Contato", to: "/contato" },
 ];
@@ -27,7 +27,7 @@ const Header = () => {
       <div className="container mx-auto px-6 flex items-center justify-between h-16 md:h-20">
         <Link to="/" className="flex items-center gap-2">
           <img
-            src="/images/marca/logoooooo.png"
+            src={mediaUrl("/marca/logo.png")}
             alt="Soffia Visual"
             className="h-9 w-auto"
           />
@@ -54,37 +54,41 @@ const Header = () => {
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
           className="lg:hidden text-foreground"
+          aria-label={mobileOpen ? "Fechar menu" : "Abrir menu"}
+          aria-expanded={mobileOpen}
         >
           {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
 
       {/* Mobile nav */}
-      {mobileOpen && (
-        <motion.nav
-          initial={{ opacity: 0, height: 0 }}
-          animate={{ opacity: 1, height: "auto" }}
-          exit={{ opacity: 0, height: 0 }}
-          className="lg:hidden bg-background border-t border-border"
-        >
-          <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                onClick={() => setMobileOpen(false)}
-                className={`font-body text-sm tracking-widest uppercase py-2 ${
-                  location.pathname === link.to
-                    ? "text-primary"
-                    : "text-muted-foreground"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
-        </motion.nav>
-      )}
+      <AnimatePresence>
+        {mobileOpen && (
+          <motion.nav
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            className="lg:hidden bg-background border-t border-border overflow-hidden"
+          >
+            <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
+              {NAV_LINKS.map((link) => (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  onClick={() => setMobileOpen(false)}
+                  className={`font-body text-sm tracking-widest uppercase py-2 ${
+                    location.pathname === link.to
+                      ? "text-primary"
+                      : "text-muted-foreground"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </motion.nav>
+        )}
+      </AnimatePresence>
     </motion.header>
   );
 };

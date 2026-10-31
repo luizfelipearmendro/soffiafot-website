@@ -1,50 +1,49 @@
 import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
 import FadeIn from "@/components/FadeIn";
-import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
-import { url } from "inspector";
+import { mediaUrl } from "@/lib/media";
 
 const posts = [
   {
     title: "Um pouquinho dos 15 anos da Vitória. ✨🦋",
     excerpt: "Registrando momentos que merecem ser lembrados para sempre.",
-    image: "/images/trabalhos/aniversario-15-years-blog.jpeg",
+    image: mediaUrl("/trabalhos/aniversario-15-years-blog.jpeg"),
     date: "24 Jul 2026",
     url: "https://www.instagram.com/p/DbLoKOAETdX/",
   },
     {
     title: "Use Areh 💃🏻",
     excerpt: "Cada clique conta a história de uma marca. 🤎✨",
-    image: "/images/ensaios/useareh-blog.jpeg",
+    image: mediaUrl("/ensaios/useareh-blog.jpeg"),
     date: "18 Jul 2026",
     url: "https://www.instagram.com/p/Da8Ouy2Edcv/",
   },
   {
     title: "Eles disseram SIM! ✨",
     excerpt: "Crys & Pedro 💍",
-    image: "/images/trabalhos/cris e rick 3.jpeg",
+    image: mediaUrl("/trabalhos/cris e rick 3.jpeg"),
     date: "19 Jun 2026",
     url: "https://www.instagram.com/p/DZxrR5-kUDK/",
   },
   {
     title: "Luz natural, movimento e leveza",
     excerpt: "Momentos reais, espontâneos e cheios de vida.",
-    image: "/images/ensaios/manu3.jpeg",
+    image: mediaUrl("/ensaios/manu3.jpeg"),
     date: "18 Abr 2026",
     url: "https://www.instagram.com/p/DXFDfWgkTzh/",
   },
   {
     title: "A Arte do Retrato Natural",
     excerpt: "Cores, luz e movimento – cada clique conta uma história.",
-    image: "/images/ensaios/areh-parque1.jpg",
+    image: mediaUrl("/ensaios/areh-parque1.jpg"),
     date: "15 Fev 2025",
     url: "https://www.instagram.com/p/DGG9Lt0Rw1N/",
   },
   {
     title: "Por Trás das Câmeras",
     excerpt: "Passos firmes, energia leve e um cenário que inspira.",
-    image: "/images/ensaios/jude-2.jpg",
+    image: mediaUrl("/ensaios/jude-2.jpg"),
     date: "15 Fev 2025",
     url: "https://www.instagram.com/p/DGG9byuRy6Q/",
   },
@@ -63,7 +62,12 @@ const BlogPage = () => (
         <div className="grid md:grid-cols-3 gap-8">
           {posts.map((post, i) => (
             <FadeIn key={post.title} delay={0.1 * i}>
-              <article className="group border border-border bg-card/50 overflow-hidden hover:border-primary/30 transition-colors duration-300">
+              <a
+                href={post.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block group border border-border bg-card/50 overflow-hidden hover:border-primary/30 transition-colors duration-300"
+              >
                 <div className="aspect-[16/10] overflow-hidden">
                   <img
                     src={post.image}
@@ -82,16 +86,11 @@ const BlogPage = () => (
                   <p className="font-body text-sm text-muted-foreground leading-relaxed mb-4">
                     {post.excerpt}
                   </p>
-                  <a
-                    href={post.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 font-body text-xs tracking-wider uppercase text-primary"
-                  >
-                    Ler mais <ArrowRight className="w-3 h-3" />
-                  </a>
+                  <span className="inline-flex items-center gap-1 font-body text-xs tracking-wider uppercase text-primary group-hover:gap-2 transition-all">
+                    Ver no Instagram <ArrowRight className="w-3 h-3" />
+                  </span>
                 </div>
-              </article>
+              </a>
             </FadeIn>
           ))}
         </div>

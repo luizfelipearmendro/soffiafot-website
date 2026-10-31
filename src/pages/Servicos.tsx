@@ -2,28 +2,29 @@ import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
 import FadeIn from "@/components/FadeIn";
 import { Camera, Film, Smartphone, CheckCircle } from "lucide-react";
+import { mediaUrl } from "@/lib/media";
 
 const servicesData = [
+  {
+    icon: Camera,
+    title: "Fotografia Profissional",
+    description: "Ensaios fotográficos com olhar artístico e sensível, capturando a essência de cada momento.",
+    features: ["Ensaios individuais e em família", "Aniversários e 15 anos", "Casamentos e eventos", "Fotografia corporativa"],
+    image: mediaUrl("/ensaios/andiara1.jpeg"),
+  },
   {
     icon: Smartphone,
     title: "Fotógrafo Mobile",
     description: "Conteúdo profissional otimizado para redes sociais e plataformas digitais.",
     features: ["Stories e Reels", "Fotos para Instagram", "Conteúdo para TikTok", "Edição para mobile"],
-    image: "/images/ensaios/areh-parque2.jpg",
+    image: mediaUrl("/ensaios/areh-parque2.jpg"),
   },
-  // {
-  //   icon: Camera,
-  //   title: "Fotografia Profissional",
-  //   description: "Ensaios fotográficos com olhar artístico e sensível, capturando a essência de cada momento.",
-  //   features: ["Ensaios individuais e em grupo", "Cobertura de eventos", "Fotografia corporativa", "Book profissional"],
-  //   image: "/images/IMG_3548%202.jpg",
-  // },
   {
     icon: Film,
     title: "Videomaker",
     description: "Produções audiovisuais que contam histórias através do movimento, cor e emoção.",
     features: ["Vídeos institucionais", "Cobertura de eventos", "Conteúdo para redes", "Edição profissional"],
-    image: "/images/ensaios/emilli-marchese5.jpg",
+    image: mediaUrl("/ensaios/emilli-marchese5.jpg"),
   },
 ];
 
@@ -34,7 +35,7 @@ const ServicosPage = () => (
     <section className="py-24">
       <div className="container mx-auto px-6 space-y-24">
         {servicesData.map((service, i) => (
-          <div key={service.title} className={`grid md:grid-cols-2 gap-12 md:gap-16 items-center ${i % 2 === 1 ? "md:direction-rtl" : ""}`}>
+          <div key={service.title} className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
             <FadeIn className={i % 2 === 1 ? "md:order-2" : ""}>
               <div className="aspect-[4/3] overflow-hidden">
                 <img src={service.image} alt={service.title} className="w-full h-full object-cover" loading="lazy" />

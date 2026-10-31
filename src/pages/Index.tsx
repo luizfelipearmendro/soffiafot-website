@@ -3,17 +3,18 @@ import HeroSection from "@/components/HeroSection";
 import FadeIn from "@/components/FadeIn";
 import { Link } from "react-router-dom";
 import { Camera, Film, Smartphone, ArrowRight } from "lucide-react";
+import { mediaUrl } from "@/lib/media";
 
 const services = [
-  // { icon: Camera, title: "Fotografia", desc: "Retratos e ensaios com olhar artístico." },
+  { icon: Camera, title: "Fotografia", desc: "Ensaios, aniversários, casamentos e eventos." },
   { icon: Smartphone, title: "Fotógrafo Mobile", desc: "Conteúdo profissional para redes." },
   { icon: Film, title: "Videomaker", desc: "Produções audiovisuais emocionantes." },
 ];
 
 const galleryPreview = [
-  "/images/trabalhos/cris e rick 1.jpeg",
-  "/images/ensaios/emilli-marchese1.jpg",
-  "/images/ensaios/manu3.jpeg",
+  mediaUrl("/trabalhos/cris e rick 1.jpeg"),
+  mediaUrl("/ensaios/emilli-marchese1.jpg"),
+  mediaUrl("/ensaios/manu3.jpeg"),
 ];
 
 const Index = () => (
@@ -27,7 +28,7 @@ const Index = () => (
           <FadeIn>
             <div className="aspect-[3/4] overflow-hidden">
               <img
-                src="/images/soff/soff&camera.jpeg"
+                src={mediaUrl("/soff/soff&camera.jpeg")}
                 alt="Jullyany Soffia"
                 className="w-full h-full object-cover"
               />
@@ -61,7 +62,7 @@ const Index = () => (
             Nossos <span className="italic">Serviços</span>
           </h2>
         </FadeIn>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {services.map((s, i) => (
             <FadeIn key={s.title} delay={0.1 * i}>
               <div className="p-8 border border-border hover:border-primary/40 bg-card/50 transition-all duration-500 group">
@@ -96,7 +97,7 @@ const Index = () => (
           {galleryPreview.map((src, i) => (
             <FadeIn key={i} delay={0.1 * i}>
               <div className="aspect-[3/4] overflow-hidden group">
-                <img src={src} alt={`Foto ${i + 1}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+                <img src={src} alt={`Trabalho de Soffia Visual ${i + 1}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
               </div>
             </FadeIn>
           ))}

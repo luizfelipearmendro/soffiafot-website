@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Instagram, Mail, Phone } from "lucide-react";
+import { mediaUrl } from "@/lib/media";
 
 const Footer = () => {
   const ref = useRef(null);
@@ -34,18 +35,18 @@ const Footer = () => {
 
         <div className="mt-20 pt-10 border-t border-border flex flex-col md:flex-row items-center justify-between gap-6">
           <img
-            src="/images/marca/logoooooo.png"
+            src={mediaUrl("/marca/logo.png")}
             alt="Soffia Visual"
             className="h-8 w-auto opacity-50"
           />
           <div className="flex items-center gap-6">
-            <a href="https://www.instagram.com/soffia.visual?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="https://www.instagram.com/soffia.visual?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-muted-foreground hover:text-foreground transition-colors">
               <Instagram className="w-5 h-5" />
             </a>
-            <a href="mailto:jullyanysoffia@icloud.com" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="mailto:jullyanysoffia@icloud.com" aria-label="E-mail" className="text-muted-foreground hover:text-foreground transition-colors">
               <Mail className="w-5 h-5" />
             </a>
-            <a href="tel:+5565981135918" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="tel:+5565981135918" aria-label="Telefone" className="text-muted-foreground hover:text-foreground transition-colors">
               <Phone className="w-5 h-5" />
             </a>
           </div>

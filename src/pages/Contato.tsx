@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, type ChangeEvent, type FormEvent } from "react";
 import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
 import FadeIn from "@/components/FadeIn";
@@ -11,7 +11,7 @@ const ContatoPage = () => {
     mensagem: "",
   });
 
-  const handleChange = (e: any) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
 
     setFormData((prev) => ({
@@ -20,7 +20,7 @@ const ContatoPage = () => {
     }));
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const msg = `Olá, Soffia! Me chamo *${formData.nome}*.\n\n*Mensagem:* ${formData.mensagem}\n\n*E-mail:* ${formData.email}`;

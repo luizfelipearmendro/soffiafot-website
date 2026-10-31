@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
 import FadeIn from "@/components/FadeIn";
+import { mediaUrl } from "@/lib/media";
 
 const SobrePage = () => (
   <Layout>
@@ -12,7 +13,7 @@ const SobrePage = () => (
           <FadeIn>
             <div className="aspect-[3/4] overflow-hidden relative">
               <img
-                src="/images/soff/retrato-soff.jpeg"
+                src={mediaUrl("/soff/retrato-soff.jpeg")}
                 alt="Jullyany Soffia"
                 className="w-full h-full object-cover"
               />
